@@ -1,0 +1,96 @@
+:root {
+  --white: #fff;
+  --primary-blue: #2947a9;
+  --primary-orange: #f9995d;
+  --black: #14171f;
+  --primary-font: 'Work Sans', sans-serif;
+}
+
+body {
+  font-family: var(--primary-font);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+
+/**
+  |============================
+  | HEADER
+  |============================
+*/
+
+.header {
+  height: 58px;
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  margin-left: 45px;
+  align-items: center;
+}
+
+.logo-icon {
+  margin-right: 10px;
+}
+
+.logo-link {
+  color: var(--primary-blue);
+  font-size: 22px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  margin-right: 345px;
+}
+
+.logo-span {
+  font-style: italic;
+}
+
+.nav-list {
+  display: flex;
+  gap: 35px;
+}
+
+.nav-list li {
+  font-size: 13px;
+  color: var(--black);
+}
+
+.nav-list li:last-child {
+  color: var(--primary-orange);
+}
+
+/**
+  |============================
+  | HERO
+  |============================
+*/
