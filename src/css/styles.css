@@ -5,6 +5,8 @@
   --primary-orange: #f9995d;
   --black: #14171f;
   --dark-color: #292e3d;
+  --grey: #858ead;
+  --light-grey: #e0e3eb;
   --primary-font: 'Work Sans', sans-serif;
 }
 
@@ -249,4 +251,53 @@ ol {
     height: 45px;
     font-size: 16px;
   }
+}
+
+/**
+  |============================
+  | Reputation Section
+  |============================
+*/
+
+.reputation-section {
+  padding: 44px 150px 60px 158px;
+}
+
+.main-rep-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.rep-heading {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 36px;
+}
+
+.rep-list-heading {
+  font-size: 15px;
+  margin-bottom: 13px;
+}
+
+.rep-p {
+  color: var(--grey);
+  font-size: 11px;
+}
+
+.rep-icon {
+  fill: var(--primary-orange);
+  margin-bottom: 10px;
+}
+
+.rep-list {
+  display: flex;
+  gap: 48px;
+}
+
+.rep-list li {
+  width: 213px;
+  border-radius: 3px;
+  border: 1px solid var(--light-grey);
+  padding: 14px 14px 30px 14px;
 }
