@@ -1,5 +1,6 @@
 :root {
   --white: #fff;
+  --darker-white: #f6f8f7;
   --primary-blue: #2947a9;
   --secondary-blue: #3559c7;
   --primary-orange: #f9995d;
@@ -421,5 +422,83 @@ ol {
     width: 160px;
     height: 38px;
     font-size: 15px;
+  }
+}
+
+/**
+  |============================
+  | Services section
+  |============================
+*/
+
+.services-section {
+  padding: 32px 158px 55px 158px;
+  background-color: var(--darker-white);
+}
+
+.serv-heading {
+  margin-bottom: 26px;
+  text-align: center;
+  font-size: 26px;
+}
+
+.services-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 35px;
+  column-gap: 70px;
+}
+
+.services-list li {
+  width: calc((100% - 70px * 2) / 3);
+  height: 132px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+}
+
+.serv-item-heading {
+  font-size: 14px;
+}
+
+.serv-icon {
+  margin-bottom: 20px;
+}
+
+.blue-item {
+  background-color: var(--primary-blue);
+  color: var(--white);
+}
+
+.white-item {
+  background-color: var(--white);
+  color: var(--primary-blue);
+}
+
+.blue-item:hover,
+.blue-item:focus,
+.white-item:hover,
+.white-item:focus {
+  transform: scale(1.05);
+}
+
+@media screen and (min-width: 1440px) {
+  .services-section {
+    padding: 52px 168px 65px 168px;
+  }
+
+  .services-list li {
+    height: 160px;
+  }
+
+  .serv-heading {
+    font-size: 28px;
+  }
+
+  .serv-item-heading {
+    font-size: 16px;
   }
 }
