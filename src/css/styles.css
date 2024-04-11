@@ -502,3 +502,75 @@ ol {
     font-size: 16px;
   }
 }
+
+/**
+  |============================
+  | Experience section
+  |============================
+*/
+
+.exp-section {
+  padding: 90px 100px 70px 190px;
+  position: relative;
+}
+
+.main-exp-container {
+  display: flex;
+  gap: 110px;
+  justify-content: space-between;
+}
+
+.exp-text {
+  width: 262px;
+}
+
+.exp-heading {
+  font-size: 44px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: var(--primary-blue);
+}
+
+.exp-p {
+  font-size: 14px;
+  margin-bottom: 45px;
+  color: var(--dark-color);
+}
+
+.exp-btn {
+  width: 130px;
+  height: 38px;
+  background-color: var(--primary-blue);
+  color: var(--white);
+  border: none;
+  border-radius: 1.5;
+}
+
+.exp-box {
+  box-shadow: 0 2.926928758621216px 4.390393257141113px -1.463464379310608px rgba(17, 24, 39, 0.05),
+    0 8.780786514282227px 11.707715034484863px -2.926928758621216px rgba(17, 24, 39, 0.1);
+  height: 113px;
+}
+
+.exp-box .project {
+  width: 264px;
+  top: 200px;
+  left: 155px;
+}
+
+.exp-box .client {
+  width: 204px;
+}
+
+.exp-box .award {
+  width: 200px;
+}
+
+.exp-box .years {
+  width: 243px;
+}
+
+/* .exp-img-years {
+  position: absolute;
+  top: 150px;
+} */
