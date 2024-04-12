@@ -511,17 +511,16 @@ ol {
 
 .exp-section {
   padding: 90px 100px 70px 190px;
-  position: relative;
 }
 
 .main-exp-container {
   display: flex;
   gap: 110px;
-  justify-content: space-between;
 }
 
 .exp-text {
   width: 262px;
+  padding-top: 60px;
 }
 
 .exp-heading {
@@ -546,31 +545,51 @@ ol {
   border-radius: 1.5;
 }
 
+.exp-boxes {
+  width: 300px;
+  height: 460px;
+}
+
 .exp-box {
   box-shadow: 0 2.926928758621216px 4.390393257141113px -1.463464379310608px rgba(17, 24, 39, 0.05),
     0 8.780786514282227px 11.707715034484863px -2.926928758621216px rgba(17, 24, 39, 0.1);
-  height: 113px;
+  height: 73px;
+  width: 150px;
+  margin-bottom: 20px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
 }
 
-.exp-box .project {
+.project {
   width: 264px;
-  top: 200px;
-  left: 155px;
+  background-color: var(--grey);
 }
 
-.exp-box .client {
+.client {
   width: 204px;
+  background-color: var(--light-grey);
 }
 
-.exp-box .award {
+.award {
   width: 200px;
+  background-color: var(--grey);
 }
 
-.exp-box .years {
+.years {
   width: 243px;
+  background-color: var(--light-grey);
 }
 
-/* .exp-img-years {
-  position: absolute;
-  top: 150px;
-} */
+.exp-box-number {
+  color: var(--dark-color);
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.exp-box-p {
+  font-size: 17px;
+}
