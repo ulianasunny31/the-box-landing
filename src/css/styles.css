@@ -543,10 +543,11 @@ ol {
   color: var(--white);
   border: none;
   border-radius: 1.5;
+  font-size: 13px;
 }
 
 .exp-boxes {
-  width: 300px;
+  width: 330px;
   height: 460px;
 }
 
@@ -592,4 +593,59 @@ ol {
 
 .exp-box-p {
   font-size: 17px;
+}
+
+@media screen and (min-width: 1440px) {
+  .exp-section {
+    padding: 120px 100px 70px 350px;
+  }
+
+  .main-exp-container {
+    gap: 130px;
+  }
+
+  .exp-text {
+    padding-top: 90px;
+  }
+
+  .exp-heading {
+    font-size: 50px;
+  }
+
+  .exp-p {
+    font-size: 16px;
+  }
+
+  .exp-btn {
+    width: 140px;
+    height: 43px;
+    font-size: 15px;
+  }
+
+  .exp-boxes {
+    width: 350px;
+    height: 500px;
+  }
+
+  .exp-box {
+    margin-bottom: 40px;
+    height: 80px;
+    padding: 10px;
+  }
+
+  .project {
+    width: 274px;
+  }
+
+  .client {
+    width: 214px;
+  }
+
+  .award {
+    width: 210px;
+  }
+
+  .years {
+    width: 253px;
+  }
 }
