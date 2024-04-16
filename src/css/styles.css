@@ -90,6 +90,7 @@ ol {
 .nav-list li {
   font-size: 14px;
   color: var(--black);
+  cursor: pointer;
 }
 
 .nav-list li:last-child {
@@ -544,6 +545,12 @@ ol {
   border: none;
   border-radius: 1.5;
   font-size: 13px;
+  cursor: pointer;
+}
+
+.exp-btn:hover,
+.exp-btn:focus {
+  transform: scale(1.05);
 }
 
 .exp-boxes {
@@ -696,7 +703,7 @@ ol {
   color: var(--white);
 }
 
-.btn-div {
+/* .btn-div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -711,6 +718,30 @@ ol {
   border-radius: 1px;
   font-size: 13px;
   cursor: pointer;
+} */
+
+.btn-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.consult-btn {
+  width: 170px;
+  height: 38px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 20px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.consult-btn:hover {
+  transform: scale(0.98);
+  background-color: white;
+  color: #000000;
 }
 
 @media screen and (min-width: 1440px) {
@@ -728,4 +759,82 @@ ol {
     height: 50px;
     font-size: 16px;
   }
+}
+
+/**
+  |============================
+  | Projects section
+  |============================
+*/
+
+.projects-section {
+  padding: 64px 80px 100px;
+}
+
+.main-project-container {
+  display: flex;
+  gap: 180px;
+}
+
+.text-project-div h3 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.proj-list li {
+  color: var(--grey);
+  font-size: 17.5px;
+  font-weight: 500;
+  margin-bottom: 14px;
+  opacity: 50%;
+}
+
+.proj-list .active-proj {
+  color: var(--primary-blue);
+  opacity: 100%;
+  font-weight: 700;
+}
+
+.photo-projects-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.photo-projects-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 23px;
+}
+
+.photo-projects-list li {
+  width: calc((100% - 23px) / 2);
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  width: 274px;
+  background-color: var(--primary-blue);
+}
+
+.photo-pr-text {
+  background-color: var(--primary-blue);
+  color: var(--white);
+  height: 61px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 8px;
+}
+
+.pr-name-heading {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 9px;
+  margin-top: 0;
+}
+
+.pr-name-p {
+  font-size: 13px;
+  font-weight: normal;
 }
