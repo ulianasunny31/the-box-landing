@@ -806,6 +806,7 @@ ol {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 23px;
+  margin-bottom: 24px;
 }
 
 .photo-projects-list li {
@@ -813,7 +814,6 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 0;
-  width: 274px;
   background-color: var(--primary-blue);
 }
 
@@ -837,4 +837,89 @@ ol {
 .pr-name-p {
   font-size: 13px;
   font-weight: normal;
+}
+
+.pr-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.pr-btn {
+  width: 215px;
+  height: 46px;
+  font-size: 13px;
+  background-color: var(--dark-color);
+  color: var(--white);
+  cursor: pointer;
+}
+
+.pr-btn:nth-last-child(n + 2) {
+  margin-right: 24px;
+}
+
+.dots-list {
+  width: 105px;
+  display: flex;
+  align-items: center;
+}
+
+.dots-list::before {
+  content: '· · · ·  ';
+  margin-right: 24px;
+  color: #000;
+  font-size: 42px;
+}
+
+@media screen and (min-width: 1440px) {
+  .projects-section {
+    padding: 104px 80px 100px 220px;
+  }
+
+  .main-project-container {
+    gap: 250px;
+  }
+
+  .photo-projects-list {
+    gap: 25px;
+    width: 600px;
+  }
+
+  .photo-projects-list li {
+    width: calc((100% - 25px) / 2);
+  }
+
+  .text-project-div h3 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .proj-list li {
+    font-size: 20px;
+    margin-bottom: 14px;
+  }
+
+  .photo-pr-text {
+    height: 71px;
+    padding-left: 10px;
+  }
+
+  .pr-name-heading {
+    font-size: 16px;
+    margin-bottom: 9px;
+  }
+
+  .pr-name-p {
+    font-size: 14px;
+  }
+
+  .pr-btn {
+    width: 220px;
+    height: 48px;
+    font-size: 16px;
+  }
+
+  .dots-list::before {
+    font-weight: bold;
+    font-size: 41px;
+  }
 }
