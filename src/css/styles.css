@@ -923,3 +923,58 @@ ol {
     font-size: 41px;
   }
 }
+
+/**
+  |============================
+  | Form section
+  |============================
+*/
+
+.form-section {
+  background-color: var(--darker-white);
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-inputs {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 15px;
+  column-gap: 23px;
+  width: 433px;
+  margin-bottom: 15px;
+}
+
+.form-inputs input,
+.form-inputs select {
+  width: 198px;
+  height: 30px;
+  padding: 0;
+  border: 1px solid var(--light-grey);
+  border-radius: 3px;
+  padding-left: 5px;
+}
+
+.form-inputs select {
+  width: 204.6px;
+  height: 31.6px;
+}
+
+textarea {
+  padding-left: 5px;
+  width: 428px;
+  resize: none;
+  height: 98px;
+  border: 1px solid var(--light-grey);
+  border-radius: 3px;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+}
