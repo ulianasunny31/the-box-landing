@@ -8,6 +8,7 @@
   --dark-color: #292e3d;
   --grey: #858ead;
   --light-grey: #e0e3eb;
+  --placeholder: #a3aac2;
   --primary-font: 'Work Sans', sans-serif;
 }
 
@@ -936,6 +937,18 @@ ol {
   padding-bottom: 45px;
 }
 
+.form-heading {
+  font-size: 26px;
+  margin-bottom: 14px;
+}
+
+.form-p {
+  font-size: 14px;
+  margin-bottom: 27px;
+  text-align: center;
+  width: 394px;
+}
+
 .form {
   display: flex;
   flex-direction: column;
@@ -964,17 +977,50 @@ ol {
 .form-inputs select {
   width: 204.6px;
   height: 31.6px;
+  color: var(--placeholder);
+  font-family: inherit;
+  font-size: 13px;
+}
+
+.form-inputs select:active,
+.form-inputs select:focus {
+  border: 2px solid var(--primary-blue);
 }
 
 textarea {
   padding-left: 5px;
+  padding-top: 5px;
   width: 428px;
   resize: none;
   height: 98px;
   border: 1px solid var(--light-grey);
   border-radius: 3px;
+  font-family: inherit;
 }
 
 .input::placeholder,
 .textarea::placeholder {
+  color: var(--placeholder);
+  font-family: inherit;
+  font-size: 13px;
+}
+
+.message-form-p {
+  font-size: 11px;
+  color: var(--dark-color);
+  margin-bottom: 20px;
+}
+
+.message-form-p > span {
+  color: red;
+}
+
+.form-sbt-btn {
+  width: 198px;
+  height: 38px;
+  background-color: var(--primary-blue);
+  color: var(--white);
+  font-size: 13px;
+  border: none;
+  border-radius: 1px;
 }
