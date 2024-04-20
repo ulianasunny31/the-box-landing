@@ -1074,3 +1074,22 @@ textarea {
     font-size: 16px;
   }
 }
+
+/**
+  |============================
+  | Footer
+  |============================
+*/
+
+.footer-line-container {
+  height: 51px;
+  background-color: var(--primary-blue);
+  padding-left: 82px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-line-container p {
+  font-size: 11px;
+  color: var(--white);
+}
