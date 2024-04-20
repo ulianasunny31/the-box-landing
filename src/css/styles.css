@@ -200,6 +200,11 @@ ol {
   gap: 7px;
 }
 
+.btns-container button:hover,
+.btns-container button:focus {
+  background-color: black;
+}
+
 .btn-back {
   border-left: none;
   border-top: none;
@@ -387,6 +392,12 @@ ol {
   background-color: var(--white);
   color: var(--primary-blue);
   cursor: pointer;
+}
+
+.about-btn:hover,
+.about-btn:focus {
+  background-color: var(--dark-color);
+  color: var(--white);
 }
 
 @media screen and (min-width: 1440px) {
@@ -704,23 +715,6 @@ ol {
   color: var(--white);
 }
 
-/* .btn-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.consult-btn {
-  width: 170px;
-  height: 38px;
-  background-color: transparent;
-  color: var(--white);
-  border: 2px solid var(--white);
-  border-radius: 1px;
-  font-size: 13px;
-  cursor: pointer;
-} */
-
 .btn-div {
   display: flex;
   justify-content: center;
@@ -789,6 +783,7 @@ ol {
   font-weight: 500;
   margin-bottom: 14px;
   opacity: 50%;
+  cursor: pointer;
 }
 
 .proj-list .active-proj {
@@ -816,6 +811,7 @@ ol {
   flex-direction: column;
   gap: 0;
   background-color: var(--primary-blue);
+  cursor: pointer;
 }
 
 .photo-pr-text {
@@ -852,6 +848,11 @@ ol {
   background-color: var(--dark-color);
   color: var(--white);
   cursor: pointer;
+}
+
+.pr-btn:hover,
+.pr-btn:focus {
+  background-color: black;
 }
 
 .pr-btn:nth-last-child(n + 2) {
@@ -972,6 +973,7 @@ ol {
   border: 1px solid var(--light-grey);
   border-radius: 3px;
   padding-left: 5px;
+  font-size: 13px;
 }
 
 .form-inputs select {
@@ -979,7 +981,6 @@ ol {
   height: 31.6px;
   color: var(--placeholder);
   font-family: inherit;
-  font-size: 13px;
 }
 
 .form-inputs select:active,
@@ -1023,4 +1024,53 @@ textarea {
   font-size: 13px;
   border: none;
   border-radius: 1px;
+  cursor: pointer;
+}
+
+.form-sbt-btn:hover,
+.form-sbt-btn:focus {
+  background-color: var(--secondary-blue);
+}
+
+@media screen and (min-width: 1440px) {
+  .form-inputs {
+    row-gap: 20px;
+    column-gap: 30px;
+    width: 525px;
+    margin-bottom: 20px;
+  }
+
+  .form-inputs input,
+  .form-inputs select {
+    width: 240px;
+    height: 40px;
+    padding-left: 5px;
+  }
+
+  .form-inputs select {
+    width: 246.6px;
+    height: 41.6px;
+    font-size: 15px;
+  }
+
+  textarea {
+    width: 517px;
+    height: 100px;
+  }
+
+  .input::placeholder,
+  .textarea::placeholder {
+    font-size: 15px;
+  }
+
+  .message-form-p {
+    font-size: 13px;
+    margin-bottom: 25px;
+  }
+
+  .form-sbt-btn {
+    width: 205px;
+    height: 42px;
+    font-size: 16px;
+  }
 }
