@@ -1147,7 +1147,7 @@ textarea {
 #newsletter::placeholder {
   color: var(--placeholder);
   font-size: 13px;
-  margin-left: 5px;
+  padding-left: 5px;
 }
 
 .news-btn {
@@ -1158,6 +1158,7 @@ textarea {
   font-size: 13px;
   border: none;
   border-radius: 3px;
+  cursor: pointer;
 }
 
 .social-div p {
@@ -1193,4 +1194,49 @@ textarea {
 .footer-line-container p {
   font-size: 11px;
   color: var(--white);
+}
+
+@media screen and (min-width: 1440px) {
+  .main-footer-container {
+    padding: 62px 82px 58px 222px;
+  }
+
+  .info-div .adr-p {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+
+  .news-label {
+    font-size: 16px;
+  }
+
+  #newsletter {
+    width: 204px;
+    height: 30px;
+    font-size: 14px;
+  }
+
+  #newsletter::placeholder {
+    font-size: 14px;
+  }
+
+  .news-btn {
+    width: 105px;
+    height: 33.6px;
+    font-size: 14px;
+  }
+
+  .social-div p {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .footer-line-container {
+    height: 55px;
+    padding-left: 90px;
+  }
+
+  .footer-line-container p {
+    font-size: 13px;
+  }
 }
