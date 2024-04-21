@@ -323,21 +323,23 @@
       </section>
     </main>
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
       <div class="main-footer-container">
         <div class="info-div">
-          <address>
+          <div class="address">
             <p class="adr-p">
-              <span>ADDRESS:</span>6391 Elgin St. Celina, Delaware 10299
+              <span class="adr-span">ADDRESS:</span>6391 Elgin St. Celina,
+              Delaware 10299
             </p>
             <p class="adr-p">
-              <span>PHONE:</span><a href="tel:+8411022703"></a>+84 1102 2703
+              <span class="phone-span">PHONE:</span
+              ><a href="tel:+8411022703"></a>+84 1102 2703
             </p>
             <p class="adr-p">
-              <span>EMAIL:</span
+              <span class="email-span">EMAIL:</span
               ><a href="mailto:hello@thebox.com"></a>hello@thebox.com
             </p>
-          </address>
+          </div>
           <a href="./index.html" class="link logo-link">
             <svg class="logo-icon" width="30" height="37">
               <use href="./images/icons.svg#icon-logo"></use>
@@ -347,27 +349,39 @@
         </div>
         <div class="letter-social-div">
           <div class="newsletter-div">
-            <label for="newsletter">Newsletter:</label>
-            <input id="newsletter" type="text" placeholder="Your email here" />
+            <div class="input-div">
+              <label class="news-label" for="newsletter">Newsletter:</label>
+              <input
+                id="newsletter"
+                type="text"
+                placeholder="Your email here"
+              />
+            </div>
             <button class="news-btn">Subscribe</button>
           </div>
           <div class="social-div">
             <p>Social:</p>
-            <ul class="list">
+            <ul class="list social-list">
               <li>
-                <svg class="social-icon" width="30" height="30">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
+                <a href="https://www.facebook.com/">
+                  <svg class="social-icon" width="30" height="30">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
               </li>
               <li>
-                <svg class="social-icon" width="30" height="30">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
+                <a href="https://twitter.com/">
+                  <svg class="social-icon" width="30" height="30">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
               <li>
-                <svg class="social-icon" width="30" height="30">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
+                <a href="https://www.linkedin.com/">
+                  <svg class="social-icon" width="30" height="30">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </div>
